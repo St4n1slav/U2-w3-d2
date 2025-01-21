@@ -30,5 +30,9 @@ function increseSeconds() {
 }
 
 setInterval(increseSeconds, 1000);
+setInterval(() => {
+  console.clear();
+  console.log(sessionStorage, localStorage);
+}, 1000);
 
 nameInput.value = localStorage.getItem(nameKey);
